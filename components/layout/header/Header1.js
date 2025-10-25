@@ -17,7 +17,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
             <div className="header-lower">
                 <div className="auto-container">
                     <div className="outer-box">
-                        <figure className="logo-box pl_15"><Link href="/"><img src="assets/images/logo.png" alt=""/></Link></figure>
+                        <figure className="logo-box pl_15"><Link href="/"><img width={150} src="/logo.png" alt=""/></Link></figure>
                         <div className="menu-area">
                             
                             <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
@@ -53,7 +53,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
                             </nav>
                         </div>
                         <div className="menu-right-content">
-                            <div className="search-btn mr_20"><button className="search-toggler" onClick={handlePopup}><i className="icon-1"></i></button></div>
+                            
                             <div className="link-box mr_20"><Link href="/login">Log In</Link></div>
                             <div className="btn-box"><Link href="/" className="theme-btn btn-one">Get Started</Link></div>
                         </div>

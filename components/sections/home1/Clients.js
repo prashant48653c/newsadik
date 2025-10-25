@@ -39,8 +39,8 @@ export default function Clients() {
         type: "carousel",
         startAt: 0,
         perView: 6,
-        autoplay: 2500,
-        hoverpause: true,
+        autoplay: 1000,
+        rewind:false,
         animationDuration: 800,
         gap: 20,
         breakpoints: {
@@ -97,7 +97,10 @@ export default function Clients() {
                       <div style={{
                         display:"flex",
                         alignItems:"center",
-                        justifyContent:"center"
+                        justifyContent:"center",
+                        
+                        height:"10rem"
+
                       }} className="flex items-center justify-center h-24">
                         <Image
                           src={partner.image}

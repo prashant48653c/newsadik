@@ -22,7 +22,7 @@ export default function Footer1() {
             <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
               <div className="footer-widget logo-widget mr_30">
                 <figure className="footer-logo mb_20">
-                  <Link href="/"><img src="assets/images/logo.png" alt=""/></Link>
+                  <Link href="/"><img width={170} height={100} src="/logo.png" alt=""/></Link>
                 </figure>
                 <div className="certificate-image mb-4">
                   <Image
