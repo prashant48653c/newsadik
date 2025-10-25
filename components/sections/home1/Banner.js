@@ -9,12 +9,12 @@ export default function Banner(){
         <section className="banner-section p_relative centred">
             <div className="pattern-layer" style={{ backgroundImage: "url(assets/images/shape/shape-1.png)" }}></div>
             <div className="author-box">
-                <div className="author author-1"><img src="assets/images/resource/author-1.png" alt=""/><span>Waiter</span></div>
-                <div className="author author-2"><img src="assets/images/resource/author-2.png" alt=""/><span>Assistant</span></div>
-                <div className="author author-3"><img src="assets/images/resource/author-3.png" alt=""/><span>Painter</span></div>
-                <div className="author author-4"><img src="assets/images/resource/author-4.png" alt=""/><span>Finance</span></div>
-                <div className="author author-5"><img src="assets/images/resource/author-5.png" alt=""/><span>Cleaner</span></div>
-                <div className="author author-6"><img src="assets/images/resource/author-6.png" alt=""/><span>Nurse</span></div>
+               <div className="author author-1"><img style={{width:'140px',height:"140px",objectFit:"cover"}} src="/waiter.jpg" alt=""/><span>Waiter</span></div>
+                <div className="author author-2"><img style={{width:'110px',height:"110px",objectFit:"cover"}} src="/ass.jpg" alt=""/><span>Assistant</span></div>
+                <div className="author author-3"><img style={{width:'90px',height:"90px",objectFit:"cover"}} src="/painter.jpg"  alt=""/><span>Painter</span></div>
+                <div className="author author-4"><img style={{width:'110px',height:"110px",objectFit:"cover"}} src="/banker.jpg"  alt=""/><span>Finance</span></div>
+                <div className="author author-5"><img style={{width:'90px',height:"90px",objectFit:"cover"}} src="/cleaner.jpg" alt=""/><span>Cleaner</span></div>
+                <div className="author author-6"><img style={{width:'140px',height:"140px",objectFit:"cover"}} src="/nurse.jpg" alt=""/><span>Nurse</span></div>
             </div>
             <div className="auto-container">
                 <div className="content-box">
