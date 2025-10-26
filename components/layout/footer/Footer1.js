@@ -24,15 +24,8 @@ export default function Footer1() {
                 <figure className="footer-logo mb_20">
                   <Link href="/"><img width={170} height={100} src="/logo.png" alt=""/></Link>
                 </figure>
-                <div className="certificate-image mb-4">
-                  <Image
-                    src="/image.png?height=150&width=180"
-                    alt="Certificate"
-                    width={150}
-                    height={125}
-                    className="rounded w-36 sm:w-44"
-                  />
-                </div>
+                <p>Since 2015, Sadiksya Overseas has connecting hospitality workers to thousands of business, private events and universities.</p>
+               
               </div>
             </div>
 
@@ -70,6 +63,15 @@ export default function Footer1() {
                     Permissions
                   </a>
                 </div>
+                 <div className=" pt_12 certificate-image mb-4">
+                  <Image
+                    src="/image.png?height=150&width=180"
+                    alt="Certificate"
+                    width={150}
+                    height={125}
+                    className="rounded w-36 sm:w-44"
+                  />
+                </div>
               </div>
             </div>
 
@@ -86,14 +88,7 @@ export default function Footer1() {
                   <p><strong>Email:</strong> info@sadiksha.com.np</p>
                   <p><strong>Phone:</strong> +977 9841992641</p>
                   <p><strong>Website:</strong> <a href="http://www.sadiksha.com.np" className="hover:underline">www.sadiksha.com.np</a></p>
-                  <div className="mt-2 flex space-x-3">
-                    <a href='https://www.facebook.com/profile.php?id=61559076539202'>
-                      <Facebook className="w-5 h-5 hover:text-gray-400 transition-colors" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/sadiksha-overseas/?feedView=all">
-                      <Linkedin className="w-5 h-5 hover:text-gray-400 transition-colors" />
-                    </a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -103,13 +98,20 @@ export default function Footer1() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="footer-bottom">
-        <div className="auto-container">
-          <div className="bottom-inner text-center">
-            <p>Copyright &copy; {new Date().getFullYear()} <Link href="/">JobAway</Link> All rights reserved.</p>
-          </div>
-        </div>
-      </div>
+     <div className="footer-bottom">
+                <div className="auto-container">
+                    <div className="bottom-inner">
+                        <div className="copyright"><p>Copyright &copy; {new Date().getFullYear()} <Link href="/">JobAway</Link> All rights reserved.</p></div>
+                        <ul className="social-links">
+                            <li><h5>Follow Us On:</h5></li>
+                            <li><Link href="https://www.facebook.com/profile.php?id=61559076539202"><i className="icon-22"></i></Link></li>
+                            <li><Link href="https://twitter.com/"><i className="icon-23"></i></Link></li>
+                            <li><Link href="https://www.linkedin.com/company/sadiksha-overseas/?feedView=all"><i className="icon-24"></i></Link></li>
+                            <li><Link href="https://www.instagram.com/"><i className="icon-25"></i></Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </footer>
   )
 }

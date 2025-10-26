@@ -29,15 +29,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                     <div className="menu-outer">
                         <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul className="navigation clearfix">
-                                <li className={isActive.key == 1 ? "dropdown current" : "dropdown"}><Link href="/">Home</Link>
-                                    <ul style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
-                                        <li><Link href="/">Home One</Link></li>
-                                        <li><Link href="/index-2">Home Two</Link></li>
-                                        <li><Link href="/index-3">Home Three</Link></li>
-                                        <li><Link href="/index-4">Home Four</Link></li>
-                                        <li><Link href="/index-5">Home Five</Link></li>
-                                    </ul>
-                                    <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fa fa-angle-right" /></div>
+                                <li className={isActive.key == 1 ? "current" : ""}><Link href="/">Home</Link>
+                                   
+                                 
                                 </li>
                                 <li><Link href="/about">About</Link></li>
                                 <li className={isActive.key == 2 ? "dropdown current" : "dropdown"}><Link href="/#">Solutions</Link>

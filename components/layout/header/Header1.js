@@ -12,11 +12,11 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
         {/* main header */}
 
 
-        <header className={`main-header header-style-one ${scroll ? "fixed-header" : ""}`}>
+        <header  className={`main-header header-style-one ${scroll ? "fixed-header" : ""}`}>
             
-            <div className="header-lower">
-                <div className="auto-container">
-                    <div className="outer-box">
+            <div  className="header-lower">
+                <div  className="auto-container">
+                    <div style={{background:'#fcfcfcff'}} className="outer-box">
                         <figure className="logo-box pl_15"><Link href="/"><img width={150} src="/logo.png" alt=""/></Link></figure>
                         <div className="menu-area">
                             
@@ -44,7 +44,7 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
             <div className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}>
                 <div className="auto-container">
                     <div className="outer-box">
-                        <figure className="logo-box pl_15"><Link href="/"><img src="assets/images/logo.png" alt=""/></Link></figure>
+                        <figure className="logo-box pl_15"><Link href="/"><img width={150} src="/logo.png" alt=""/></Link></figure>
                         <div className="menu-area">
                             <nav className="main-menu navbar-expand-md navbar-light">
                                 <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">

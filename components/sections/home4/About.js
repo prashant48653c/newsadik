@@ -22,7 +22,7 @@ export default function About(){
                                     <div className="support-box">
                                         <div className="icon-box"><i className="icon-28"></i></div>
                                         <span>Online Support</span>
-                                        <h4><Link href="tel:912556889">+912 (556) 889</Link></h4>
+                                        <h4><Link href="tel:+9779841992641">+977 9841992641</Link></h4>
                                     </div>
                                 </div>
                             </div>
@@ -32,29 +32,29 @@ export default function About(){
                                 <div className="content-box">
                                     <div className="sec-title pb_40 sec-title-animation animation-style2">
                                         <span className="sub-title mb_10 title-animation">About us</span>
-                                        <h2 className="title-animation">The most loved <span>Agency</span></h2>
-                                        <p className="title-animation">Voted the fastest solution to implement the easiest to administer your employee & business.</p>
+                                        <h2 className="title-animation">Sadiksha <span>Overseas</span></h2>
+                                        <p className="title-animation">Empowering Nepali jobseekers with quality international opportunities, ensuring integrity, excellence, and compliance in every placement.</p>
                                     </div>
                                     <div className="inner-box clearfix">
                                         <div className="single-item">
                                             <div className="icon-box"><i className="icon-29"></i></div>
-                                            <h4><Link href="/job-details">Easiest Admin</Link></h4>
-                                            <span>Fall 2023</span>
+                                            <h4><Link href="/services"> Recruitment</Link></h4>
+                                            <span>Since 2015</span>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><i className="icon-30"></i></div>
-                                            <h4><Link href="/job-details">Users love Us</Link></h4>
-                                            <span>Winter 2023</span>
+                                            <h4><Link href="/team">Good Team</Link></h4>
+                                            <span>Expert Guidance</span>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><i className="icon-31"></i></div>
-                                            <h4><Link href="/job-details">Leader</Link></h4>
-                                            <span>Winter 2023</span>
+                                            <h4><Link href="/testimonials">Satisfied Clients</Link></h4>
+                                            <span>Global Placements</span>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><i className="icon-32"></i></div>
-                                            <h4><Link href="/job-details">Best support</Link></h4>
-                                            <span>Winter 2023</span>
+                                            <h4><Link href="/contact">24/7 Support</Link></h4>
+                                            <span>Reach Anywhere</span>
                                         </div>
                                     </div>
                                 </div>

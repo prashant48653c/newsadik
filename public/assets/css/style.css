@@ -108,9 +108,9 @@
 
 
 :root{
-  --theme-color: #78EB54;
-  --theme-color-2: #45A735;
-  --secondary-color: #26472B;
+  --theme-color: rgb(0, 255, 229);
+  --theme-color-2: #5ef1c7;
+  --secondary-color: #59bac1;
   --text-color: #666666;
   --title-color: #111111;
   --text-font: "Inter", sans-serif;

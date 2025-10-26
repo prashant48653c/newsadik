@@ -18,7 +18,7 @@ export default function Contact_Page() {
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
-        setErrors({ ...errors, [e.target.name]: "" }) // clear error while typing
+        setErrors({ ...errors, [e.target.name]: "" })
     }
 
     const validateForm = () => {
@@ -28,8 +28,8 @@ export default function Contact_Page() {
             newErrors.fullName = "Full Name must be at least 3 characters"
         }
 
-        if (!form.phone.trim() || !/^\d{10}$/.test(form.phone)) {
-            newErrors.phone = "Phone must be a valid 10-digit number"
+        if (!form.phone.trim() || !/^\d{10,15}$/.test(form.phone)) {
+            newErrors.phone = "Phone must be a valid number"
         }
 
         if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
@@ -63,8 +63,8 @@ export default function Contact_Page() {
     }
 
     return (
-        <div className="boxed_wrapper">
-            <Layout headerStyle={3} footerStyle={2} breadcrumbTitle="Contact us">
+        <div className="boxed_wrapper ">
+            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Contact us">
                 
                 <section className="contact-section pt_110 pb_30">
                     <div className="auto-container">
@@ -76,25 +76,26 @@ export default function Contact_Page() {
                                         <div className="single-item">
                                             <div className="icon-box"><img src="assets/images/icons/icon-27.png" alt=""/></div>
                                             <h4>Corporate Office</h4>
-                                            <p>0233 Brisbane Cir. Shiloh, Australia 81063</p>
-                                        </div>
-                                        <div className="single-item">
-                                            <div className="icon-box"><img src="assets/images/icons/icon-27.png" alt=""/></div>
-                                            <h4>Main Warehouse</h4>
-                                            <p>10445 Brisbane Cir. Shiloh, Australia 81063</p>
+                                            <p>Samakushi-26, Kathmandu, Nepal</p>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><img src="assets/images/icons/icon-28.png" alt=""/></div>
                                             <h4>Email Address</h4>
-                                            <p><Link href="mailto:support@example.com">support@example.com</Link><br /><Link href="mailto:contact@example.com">contact@example.com</Link></p>
+                                            <p><Link href="mailto:info@sadiksha.com.np">info@sadiksha.com.np</Link></p>
                                         </div>
                                         <div className="single-item">
                                             <div className="icon-box"><img src="assets/images/icons/icon-29.png" alt=""/></div>
                                             <h4>Phone Number</h4>
-                                            <p><Link href="tel:2085440141">+(208) 544 -0141</Link><br /><Link href="tel:2085440142">+(208) 544 -0142</Link></p>
+                                            <p><Link href="tel:+9779841992641">+977 9841992641</Link></p>
+                                        </div>
+                                        <div className="single-item">
+                                            <div className="icon-box"><img src="assets/images/icons/icon-30.png" alt=""/></div>
+                                            <h4>Website</h4>
+                                            <p><Link href="http://www.sadiksha.com.np" target="_blank" rel="noopener noreferrer">www.sadiksha.com.np</Link></p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="col-lg-8 col-md-12 col-sm-12 content-column">
                                     <div className="form-inner">
                                         <form onSubmit={handleSubmit} id="contact-form">
@@ -157,7 +158,7 @@ export default function Contact_Page() {
                 <section className="google-map pb_80">
                     <div className="auto-container">
                         <div className="inner-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan Rafael%2C California%2C Hoa Kỳ!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" height={570} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28261.839139241707!2d85.2851!3d27.7346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1909a4a5c7eb%3A0x7f1e6eb0d4f2b0a2!2sSamakushi%2C%20Kathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698284000000!5m2!1sen!2snp" height={570} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                         </div>
                     </div>
                 </section>

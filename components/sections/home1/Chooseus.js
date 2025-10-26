@@ -19,8 +19,8 @@ export default function Chooseus(){
                             <div className="chooseus-block-one">
                                 <div className="inner-box">
                                     <div className="icon-box"><i className="icon-4"></i></div>
-                                    <h3><Link href="/">Retain Top Talent</Link></h3>
-                                    <p>Providing clear career paths and growth opportunities is key to retaining top talent.</p>
+                                    <h3><Link href="/">Our mission</Link></h3>
+                                    <p>Sadiksya oversea is committed to uplifting lives, supporting economic development, and setting benchmarks in workforce mobility, compliance, and client satisfaction.</p>
                                     <div className="link"><Link href="/">Learn More<i className="icon-7"></i></Link></div>
                                 </div>
                             </div>
@@ -29,8 +29,8 @@ export default function Chooseus(){
                             <div className="chooseus-block-one">
                                 <div className="inner-box">
                                     <div className="icon-box"><i className="icon-5"></i></div>
-                                    <h3><Link href="/">Stay Compliant</Link></h3>
-                                    <p>Educate employees about compliance requirements through regular training</p>
+                                    <h3><Link href="/">OUR VISION</Link></h3>
+                                    <p>To become Nepal's most trusted gateway for global employment, empowering Nepal talent to thrive on the world stage while upholding dignity, ethics, and excellence in international recruitment.</p>
                                     <div className="link"><Link href="/">Learn More<i className="icon-7"></i></Link></div>
                                 </div>
                             </div>
@@ -39,8 +39,9 @@ export default function Chooseus(){
                             <div className="chooseus-block-one">
                                 <div className="inner-box">
                                     <div className="icon-box"><i className="icon-6"></i></div>
-                                    <h3><Link href="/">Improve Employee</Link></h3>
-                                    <p>Invest in employee training and development programs to enhance skills and knowledge.</p>
+                                    <h3><Link href="/">Core Values</Link></h3>
+                                    <p>We uphold integrity, empowerment, excellence, accountability, respect, and compliance in every recruitment process, ensuring honesty, quality, responsibility, and adherence to global standards.
+</p>
                                     <div className="link"><Link href="/">Learn More<i className="icon-7"></i></Link></div>
                                 </div>
                             </div>

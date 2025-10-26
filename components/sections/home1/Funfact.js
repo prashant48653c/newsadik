@@ -29,17 +29,17 @@ export default function Funfact() {
 
   if (loading) {
     return (
-      <section className="funfact-section centred pb_90">
-        <div className="auto-container">
-          <div className="row clearfix">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-                <div className="funfact-block-one animate-pulse bg-gray-100 rounded-lg py-10">
-                  <div className="inner-box">
-                    <div className="h-8 bg-gray-300 rounded w-1/2 mx-auto mb-3"></div>
-                    <div className="h-3 bg-gray-300 rounded w-3/4 mx-auto"></div>
-                  </div>
-                </div>
+      <section className="funfact-section text-center pb_90">
+        <div className="container">
+          <div className="d-flex justify-content-center flex-wrap gap-3">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div
+                key={i}
+                className="p-4 bg-light rounded placeholder-glow"
+                style={{ width: "190px" }}
+              >
+                <span className="placeholder col-6 mb-2 d-block mx-auto"></span>
+                <span className="placeholder col-8 d-block mx-auto"></span>
               </div>
             ))}
           </div>
@@ -50,82 +50,40 @@ export default function Funfact() {
 
   if (!stats) return null
 
+  const data = [
+    { value: stats.years, label: "Years of Experience" },
+    { value: stats.placements, label: "Successful Placements" },
+    { value: stats.team, label: "Team Members" },
+    { value: stats.countriesServed, label: "Countries Served" },
+    { value: stats.database, label: "Database" },
+    { value: stats.services, label: "Services" },
+  ]
+
   return (
-    <section className="funfact-section centred pb_90">
-      <div className="auto-container">
-        <div className="row clearfix">
-          <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.years || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Years of Experience</p>
+    <section className="funfact-section text-center pb_90">
+      <div className="mx-6">
+        <div className="d-flex justify-content-center flex-wrap gap-3">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="funfact-block-one d-flex flex-column align-items-center justify-content-center p-3 border rounded"
+              style={{ width: "190px", minHeight: "110px" }}
+            >
+              <div
+                className="count-outer fw-bold"
+                style={{ fontSize: "1.8rem", lineHeight: "1.1" }}
+              >
+                <CounterUp end={item.value || 0} />
+                <span className="symble">+</span>
               </div>
+              <p
+                className="mb-0"
+                style={{ fontSize: "0.9rem", lineHeight: "1.2" }}
+              >
+                {item.label}
+              </p>
             </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.placements || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Successful Placements</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.team || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Team Members</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.countriesServed || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Countries Served</p>
-              </div>
-            </div>
-          </div>
-
-            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.database || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Database</p>
-              </div>
-            </div>
-          </div>
-
-
-            <div className="col-lg-3 col-md-6 col-sm-12 funfact-block">
-            <div className="funfact-block-one">
-              <div className="inner-box">
-                <div className="count-outer">
-                  <CounterUp end={stats.services || 0} />
-                  <span className="symble">+</span>
-                </div>
-                <p>Services</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

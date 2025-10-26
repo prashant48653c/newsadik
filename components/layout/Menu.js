@@ -20,7 +20,6 @@ export default function Menu() {
                         <li><Link href="/service-details-6">Temporary Jobs</Link></li>
                     </ul>
                 </li>
-                <li className=""><Link href="/#">Team</Link></li>
                 <li className=""><Link href="/#">Blog</Link></li>
 
                    

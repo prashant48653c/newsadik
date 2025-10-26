@@ -32,24 +32,17 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
   const handlePopup = () => setPopup(!isPopup)
   const handleSidebar = () => setSidebar(!isSidebar)
 
-//   useEffect(() => {
-//     // dynamically import WOW only on client
-//     import("wowjs").then((module) => {
-//       const WOW = module.default ? module.default : module.WOW
-//       if (WOW) {
-//         const wow = new WOW({ live: false })
-//         wow.init()
-//       }
-//     }).catch((err) => console.error("WOW.js failed to load:", err))
+  useEffect(() => {
+    // dynamically import WOW only on client
+   
+    const onScroll = () => {
+      const scrollCheck = window.scrollY > 100
+      setScroll(scrollCheck)
+    }
 
-//     const onScroll = () => {
-//       const scrollCheck = window.scrollY > 100
-//       setScroll(scrollCheck)
-//     }
-
-//     document.addEventListener("scroll", onScroll)
-//     return () => document.removeEventListener("scroll", onScroll)
-//   }, [])
+    document.addEventListener("scroll", onScroll)
+    return () => document.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
     <>
