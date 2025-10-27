@@ -21,7 +21,9 @@ export default function Home() {
         <Funfact />
         <Slide_Text />
         <Chooseus />
+        <Category/>
         <Industries />
+        <Process/>
         <Team />
         <News />
         <Subscribe />

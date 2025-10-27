@@ -38,11 +38,12 @@ export default function Industries() {
           {displayedServices.slice(0,8).map((service, index) => (
             <div key={index} className="industries-block-one">
               <div className="inner-box">
-                <div className="icon-box">
-                  <i className={`icon-${9 + index}`}></i>
-                </div>
-                <h6><Link href="/">{service.serviceType}</Link></h6>
-              </div>
+                            <div className="icon-box">
+                                 <i className={`icon-${9 + index}`}></i>
+                                </div>
+                            <h3><Link style={{fontSize:"1rem"}} href="/">{service.serviceType}</Link></h3>
+                            <p>2853 Staffs</p>
+                        </div>
             </div>
           ))}
         </div>

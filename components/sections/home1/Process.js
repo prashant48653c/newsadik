@@ -20,25 +20,25 @@ export default function Process(){
                     <span className="sub-title mb_10 title-animation">Process</span>
                     <h2 className="title-animation">How It Works?</h2>
                 </div>
-                <div className="tabs-box">
-                    <ul className="tab-btns tab-buttons">
+                <div  className="tabs-box">
+                    <ul style={{background:"#27aafbff"}} className="tab-btns tab-buttons">
                         <li onClick={() => handleOnClick(1)} className={activeIndex === 1 ? "p-tab-btn active-btn" : "tab-btn"}><i className="far fa-user"></i>For Talents</li>
                         <li onClick={() => handleOnClick(2)} className={activeIndex === 2 ? "p-tab-btn active-btn" : "tab-btn"}><i className="fas fa-briefcase"></i>For Business</li>
                     </ul>
                     <div className="tabs-content">
                         <div className={activeIndex === 1 ? "tab active-tab" : "tab"}>
                             <div className="row clearfix">
-                                <div className="col-lg-4 col-md-6 col-sm-12 processing-block">
-                                    <div className="processing-block-one">
-                                        <div className="inner-box">
+                                <div  className="col-lg-4 col-md-6 col-sm-12 processing-block">
+                                    <div  style={{background:"#27aafbff"}} className="processing-block-one">
+                                        <div  className="inner-box ">
                                             <span className="count-text">1</span>
                                             <h3><Link href="/">Sign up, It's Free!</Link></h3>
                                             <p>Our team will set up your account and help you build job to  easy-to-use web dashboard.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-6 col-sm-12 processing-block">
-                                    <div className="processing-block-one">
+                                <div  className="col-lg-4 col-md-6 col-sm-12 processing-block">
+                                    <div style={{background:"#27aafbff"}} className="processing-block-one">
                                         <div className="inner-box">
                                             <span className="count-text">2</span>
                                             <h3><Link href="/">Post jobs in minutes</Link></h3>
@@ -47,7 +47,7 @@ export default function Process(){
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-md-6 col-sm-12 processing-block">
-                                    <div className="processing-block-one">
+                                    <div style={{background:"#27aafbff"}} className="processing-block-one">
                                         <div className="inner-box">
                                             <span className="count-text">3</span>
                                             <h3><Link href="/">Review Your Staff</Link></h3>
