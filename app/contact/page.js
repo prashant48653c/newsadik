@@ -158,7 +158,8 @@ export default function Contact_Page() {
                 <section className="google-map pb_80">
                     <div className="auto-container">
                         <div className="inner-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28261.839139241707!2d85.2851!3d27.7346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1909a4a5c7eb%3A0x7f1e6eb0d4f2b0a2!2sSamakushi%2C%20Kathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698284000000!5m2!1sen!2snp" height={570} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d882.894682565419!2d85.3163079!3d27.7302904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb192049971a5f%3A0x2fb346371b7a3ca2!2sSadiksha%20Overseas!5e0!3m2!1sen!2snp!4v1761528180098!5m2!1sen!2snp" height={570} style={{ border: 0, width: "100%" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                            
                         </div>
                     </div>
                 </section>
