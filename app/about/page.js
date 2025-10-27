@@ -11,6 +11,7 @@ import Industries from "@/components/sections/home1/Industries";
 import toast from "react-hot-toast";
 import { getTestimonial } from "@/service/testimonial.service";
 import Chooseus from "@/components/sections/home1/Chooseus";
+import IndustriesAbout from "@/components/IndustriesAbout";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -65,7 +66,7 @@ export default function About_Page() {
         {/* WHY US SECTION */}
       <Chooseus/>
 
-        <Industries />
+        <IndustriesAbout />
 
         {/* TESTIMONIAL SECTION */}
         <section className="testimonial-style-two pt_120 pb_120">
