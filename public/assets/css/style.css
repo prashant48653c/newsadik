@@ -1783,7 +1783,13 @@ button.ltr {
 
 
 
-
+@media (max-width:"500px") {
+  .cus-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 

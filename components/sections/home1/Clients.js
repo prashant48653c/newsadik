@@ -116,20 +116,47 @@ export default function Clients() {
               </div>
 
               {/* Navigation Arrows */}
-              <div className="glide__arrows" data-glide-el="controls">
-                <button
-                  className="glide__arrow glide__arrow--left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 bg-white shadow-md hover:bg-gray-100 p-3 rounded-full"
-                  data-glide-dir="<"
-                >
-                  <ChevronLeft color="black" className="w-5 h-5 text-gray-700" />
-                </button>
-                <button
-                  className="glide__arrow glide__arrow--right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 bg-white shadow-md hover:bg-gray-100 p-3 rounded-full"
-                  data-glide-dir=">"
-                >
-                  <ChevronRight color="black" className="w-5 h-5 text-gray-700" />
-                </button>
-              </div>
+            <div className="glide__arrows" data-glide-el="controls">
+  {/* Left Arrow */}
+  <button
+    className="glide__arrow glide__arrow--left absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 bg-white shadow-md hover:bg-gray-100 rounded-full"
+    data-glide-dir="<"
+    style={{
+      padding: "0.5rem",        // Reduced from p-3
+      width: "32px",            // Smaller fixed size
+      height: "32px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <ChevronLeft 
+      color="black" 
+      style={{ width: "16px", height: "16px" }} 
+      className="text-gray-700" 
+    />
+  </button>
+
+  {/* Right Arrow */}
+  <button
+    className="glide__arrow glide__arrow--right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 bg-white shadow-md hover:bg-gray-100 rounded-full"
+    data-glide-dir=">"
+    style={{
+      padding: "0.5rem",
+      width: "32px",
+      height: "32px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <ChevronRight 
+      color="black" 
+      style={{ width: "16px", height: "16px" }} 
+      className="text-gray-700" 
+    />
+  </button>
+</div>
             </div>
           </div>
         ) : (
