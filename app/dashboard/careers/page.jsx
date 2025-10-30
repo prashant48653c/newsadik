@@ -372,14 +372,14 @@ export default function CareersPage() {
         </div>
 
         {/* Career View Modal */}
-        <CareerViewModal
+        {/* <CareerViewModal
           isOpen={isViewModalOpen}
           onClose={() => {
             setIsViewModalOpen(false);
             setViewingApplication(null);
           }}
           application={viewingApplication}
-        />
+        /> */}
 
         {/* Employer View Modal */}
         <div

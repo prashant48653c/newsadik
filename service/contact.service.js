@@ -29,7 +29,8 @@ export async function getEmployers() {
   try {
     const response = await api.get("/landing/employers");
     if (response.data) {
-      return response.data;
+      console.log(response.data)
+      return response.data.data;
     }
   } catch (error) {
     throw error;

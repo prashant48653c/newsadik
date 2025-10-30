@@ -1,18 +1,17 @@
 import "react-modal-video/css/modal-video.css";
-import ToggleBodyClass from "@/components/elements/Togglebtn";
-import "@/public/assets/css/bootstrap.css";
-import "@/public/assets/css/color.css";
-import "@/public/assets/css/rtl.css";
-import "@/public/assets/css/style.css";
-import "@/public/assets/css/responsive.css";
+import "../public/assets/css/bootstrap.css";
+import "../public/assets/css/color.css";
+import "../public/assets/css/rtl.css";
+import "../public/assets/css/style.css";
+import "../public/assets/css/responsive.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ClientToaster from "@/lib/clientToaster";
-import { outfit, inter } from "@/lib/font";
-import { AuthProvider } from "@/components/dashboard/auth-context";
+import ClientToaster from "../lib/clientToaster";
+import { outfit, inter } from "../lib/font";
+import { AuthProvider } from "../components/dashboard/auth-context";
 
 export const metadata = {
   title: "Sadiksya Oversea ",
