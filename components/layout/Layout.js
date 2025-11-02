@@ -58,7 +58,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             handleSidebar={handleSidebar}
           />
         )}
-        {headerStyle == 1 && (
+        {headerStyle && (
           <Header1
             scroll={scroll}
             isMobileMenu={isMobileMenu}
@@ -68,46 +68,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             handleSidebar={handleSidebar}
           />
         )}
-        {headerStyle == 2 && (
-          <Header2
-            scroll={scroll}
-            isMobileMenu={isMobileMenu}
-            handleMobileMenu={handleMobileMenu}
-            handlePopup={handlePopup}
-            isSidebar={isSidebar}
-            handleSidebar={handleSidebar}
-          />
-        )}
-        {headerStyle == 3 && (
-          <Header3
-            scroll={scroll}
-            isMobileMenu={isMobileMenu}
-            handleMobileMenu={handleMobileMenu}
-            handlePopup={handlePopup}
-            isSidebar={isSidebar}
-            handleSidebar={handleSidebar}
-          />
-        )}
-        {headerStyle == 4 && (
-          <Header4
-            scroll={scroll}
-            isMobileMenu={isMobileMenu}
-            handleMobileMenu={handleMobileMenu}
-            handlePopup={handlePopup}
-            isSidebar={isSidebar}
-            handleSidebar={handleSidebar}
-          />
-        )}
-        {headerStyle == 5 && (
-          <Header5
-            scroll={scroll}
-            isMobileMenu={isMobileMenu}
-            handleMobileMenu={handleMobileMenu}
-            handlePopup={handlePopup}
-            isSidebar={isSidebar}
-            handleSidebar={handleSidebar}
-          />
-        )}
+        
 
         <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
         <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />

@@ -107,16 +107,25 @@
  ***/
 
 
-:root{
-  --theme-color: #85bbfd;
-  --theme-color-2: #5ef1c7;
-  --secondary-color: #0063E0;
-  --text-color: #666666;
-  --title-color: #111111;
+:root {
+  /* 🌊 Primary Theme */
+  --theme-color: #3A86FF;        /* Vibrant blue (main accent) */
+  --theme-color-2: #1462c2;      /* Aqua-blue secondary accent */
+  --secondary-color: #2c51cd;    /* Deep royal blue for contrast */
+  
+  /* 🩶 Neutral / Text */
+  --background-color: #F8FAFC;   /* Light background for readability */
+  --surface-color: #FFFFFF;      /* Card / container background */
+  --border-color: #E2E8F0;       /* Subtle borders */
+  
+  --text-color: #4B5563;         /* Body text (medium gray) */
+  --muted-text-color: #9CA3AF;   /* Muted / secondary text */
+  --title-color: #111827;        /* Dark for headings */
+
+  /* ✍️ Fonts */
   --text-font: "Inter", sans-serif;
   --title-font: "Outfit", sans-serif;
 }
-
 
 
 

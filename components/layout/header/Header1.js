@@ -2,10 +2,11 @@
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
+import { useRouter } from "next/navigation"
 
 
 export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
-    
+    const Router=useRouter()
     return (
         <>
 
@@ -32,7 +33,9 @@ export default function Header1({ scroll, handleMobileMenu, handlePopup }) {
                             </nav>
                         </div>
                         <div className="menu-right-content">
-                            <div className="search-btn mr_20"><button className="search-toggler" onClick={handlePopup}><i className="icon-1"></i></button></div>
+                            <div className="search-btn mr_20"><button className="search-toggler" onClick={()=>Router.push("/jobs")}>
+                            <i class="bi bi-bell"></i>
+                                </button></div>
                             <div className="link-box mr_20"><Link href="/login">Log In</Link></div>
                             <div className="btn-box"><Link href="/" className="theme-btn btn-one">Get Started</Link></div>
                         </div>
