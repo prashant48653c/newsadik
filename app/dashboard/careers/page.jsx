@@ -13,6 +13,7 @@ export default function CareersPage() {
   const [viewingEmployer, setViewingEmployer] = useState(null);
   const [isViewModalOpen, setIsViewModalOpen] = useState(false);
   const [isEmployerViewModalOpen, setIsEmployerViewModalOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("applications"); // Add state for active tab
 
   useEffect(() => {
     fetchApplications();
@@ -120,10 +121,8 @@ export default function CareersPage() {
         <ul className="nav nav-tabs mb-4" role="tablist">
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link active"
-              id="applications-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#applications"
+              className={`nav-link ${activeTab === "applications" ? "active" : ""}`}
+              onClick={() => setActiveTab("applications")}
               type="button"
               role="tab"
             >
@@ -132,10 +131,8 @@ export default function CareersPage() {
           </li>
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link"
-              id="clients-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#clients"
+              className={`nav-link ${activeTab === "clients" ? "active" : ""}`}
+              onClick={() => setActiveTab("clients")}
               type="button"
               role="tab"
             >
@@ -146,7 +143,7 @@ export default function CareersPage() {
 
         <div className="tab-content">
           {/* Applications Tab */}
-          <div className="tab-pane fade show active" id="applications" role="tabpanel">
+          <div className={`tab-pane ${activeTab === "applications" ? "show active" : ""}`} role="tabpanel">
             {/* Stats */}
             <div className="row g-3 mb-4">
               <div className="col-md-6">
@@ -241,7 +238,7 @@ export default function CareersPage() {
           </div>
 
           {/* Clients Tab */}
-          <div className="tab-pane fade" id="clients" role="tabpanel">
+          <div className={`tab-pane ${activeTab === "clients" ? "show active" : ""}`} role="tabpanel">
             {/* Stats */}
             <div className="row g-3 mb-4">
               <div className="col-md-6">
@@ -372,14 +369,14 @@ export default function CareersPage() {
         </div>
 
         {/* Career View Modal */}
-        {/* <CareerViewModal
+        <CareerViewModal
           isOpen={isViewModalOpen}
           onClose={() => {
             setIsViewModalOpen(false);
             setViewingApplication(null);
           }}
           application={viewingApplication}
-        /> */}
+        />
 
         {/* Employer View Modal */}
         <div
@@ -499,6 +496,18 @@ export default function CareersPage() {
       <style jsx>{`
         .white-space-pre-wrap {
           white-space: pre-wrap;
+        }
+        
+        .tab-pane {
+          display: none;
+        }
+        
+        .tab-pane.show.active {
+          display: block;
+        }
+        
+        .nav-link {
+          cursor: pointer;
         }
       `}</style>
     </>

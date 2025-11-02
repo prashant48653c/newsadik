@@ -741,7 +741,7 @@ function ServiceEditModal({
     <h3 className="text-lg font-semibold">Main Images</h3>
   </div>
 
-  <div style={{display:'flex'}} className="">
+  <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(20rem, 1fr))', gap:'1rem'}} className="">
     {/* Main Image */}
     <div className="w-full  sm:w-1/2 lg:w-1/3 px-3 mb-6">
       <div className="space-y-3">
@@ -770,6 +770,10 @@ function ServiceEditModal({
                   alt="Main image preview"
                   width={350}
                   height={300}
+                  style={{
+                    width:"20rem",
+                    height:"20rem"
+                  }}
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-200">
@@ -817,6 +821,10 @@ function ServiceEditModal({
                   alt="Secondary image preview"
                   width={350}
                   height={300}
+                   style={{
+                    width:"20rem",
+                    height:"20rem"
+                  }}
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-200">
@@ -864,6 +872,10 @@ function ServiceEditModal({
                   alt="Tertiary image preview"
                   width={350}
                   height={300}
+                   style={{
+                    maxWidth:"20rem",
+                    height:"20rem"
+                  }}
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-200">

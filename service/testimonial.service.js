@@ -4,6 +4,7 @@ import api from "@/lib/axios";
 export async function getTestimonial() {
   try {
     const response = await api.get("/landing/testimonials");
+    console.log(response.data)
     if (response.data) {
       return response.data;
     }

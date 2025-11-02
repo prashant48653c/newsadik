@@ -39,7 +39,7 @@ export default function Banner(){
       }}
     >
       <Link
-        href="/"
+        href="/apply-now"
         className="theme-btn btn-one"
         style={{
           marginRight: isMobile ? 0 : "1.25rem",
@@ -50,7 +50,7 @@ export default function Banner(){
         <span>Find Works</span>
       </Link>
       <Link
-        href="/"
+        href="/apply-now"
         className="theme-btn banner-btn"
         style={{
           flex: isMobile ? 1 : "none",

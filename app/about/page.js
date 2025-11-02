@@ -97,16 +97,21 @@ export default function About_Page() {
                           <div className="author-box">
                             <figure className="thumb-box">
                               <img
-                                src={testi.image || "assets/images/resource/testimonial-1.png"}
-                                alt={testi.name || "user"}
+                              style={{
+                                width:"4rem",
+                                height:"4rem",
+                                borderRadius:"30rem"
+                              }}
+                                src={testi.logo || "assets/images/resource/testimonial-1.png"}
+                                alt={testi.title || "user"}
                               />
                             </figure>
-                            <h4>{testi.name || "Anonymous"}</h4>
+                            <h4>{testi.title || "Anonymous"}</h4>
                             <span className="designation">
-                              {testi.designation || ""}
+                              {testi.subtitle || "hellogo"}
                             </span>
                           </div>
-                          <p>{testi.message || ""}</p>
+                          <p>{testi.content || "good"}</p>
                         </div>
                       </div>
                     </SwiperSlide>
